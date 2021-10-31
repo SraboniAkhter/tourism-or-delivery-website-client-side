@@ -1,0 +1,6 @@
+.Header-container{
+    /* height:700px; */
+    position:relative;
+     background-image:url("../../../images/destination-single-gallery-3-313x234.jpg");
+    background-size: cover;
+}

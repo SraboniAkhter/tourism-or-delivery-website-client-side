@@ -1,0 +1,57 @@
+ [
+        {
+         "id": "1",
+         "name": "DRY EYE SCREENING & COMPUTERIZED TEST",
+        "description": "Dry eye signs identified on slit-lamp examination include ... instilled and the photographs are evaluated using a computer analysis program.",
+        "price":2500,
+        "doctor": "Ema Morle",
+        "specialist":"Heart",
+        "image":"https://www.kdweye.com/storage/app/media/7z.jpg"
+    
+        },
+        {
+        "id": "2",
+         "name": "CATARACT SCREENING TEST",
+        "description": "Screening Tests · Visual acuity test—This eye chart test measures how well you see distances. · Dilated eye exam—You will be given eye drops to widen your pupil.",
+        "price":2000,
+        "doctor": "Mike Martin",
+        "specialist":"Eye",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9aL9zxU_gFvCC6OGB7HpSmGFYJsA0K9Ep5A&usqp=CAU"
+        },
+        {
+            "id": "3",
+            "name": "GLAUCOMA & DIABETIC EYE SCREENING TEST",
+            "description": "Diabetic eye screening is a test to check for eye problems caused by diabetes. Eye problems caused by diabetes are called diabetic retinopathy. This can lead to sight loss if it.",
+           "price":5000,
+           "doctor": "Ema Morle",
+        "specialist":"Heart",
+           "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdQB1b9Tw1krSx8nujBOC8xIAjKhfoVpZ07w&usqp=CAU"
+        },
+        {
+            "id": "4",
+            "name":"THYROID & FULL MOUTH CHECKUP WITH CARIES PREVENTION PACKAGE",
+            "description":"Oral & Dental Health Screening Package For Adult Patients; Full Mouth Check Up With Caries Prevention For Children; Thyroid Screening.",
+            "price":10000,
+            "doctor": "Nikki Joseph",
+        "specialist":"Child",
+           "image":"https://media.istockphoto.com/photos/overview-of-dental-caries-prevention-picture-id471478846"
+        },
+        {
+            "id":"5",
+            "name":"CHILD & DIABETIC CHECK UP PACKAGE",
+            "description":" Child & Diabetic Check UP Package · CBC & ESR · Fasting Blood Sugar · 2 Hours Post Prandial · SGPT · Blood Grouping & Rh Typing · HbA1C · Fasting Lipid Profile",
+            "price":12000,
+            "doctor": "Ema Jhon",
+        "specialist":"Ear",
+           "image":"https://thumbs.dreamstime.com/b/child-baby-measuring-glucose-level-blood-test-doctor-hand-diabetes-patient-feet-using-glucometer-small-drop-32299448.jpg"
+        },
+        {
+            "id":"6",
+            "name":"LIVER SCREENING & OSTEOPOROSIS PACKAGE",
+            "description":"Osteoporosis, Bone density, Liver function tests, ... and all data analysis was conducted using statistical package SAS ver.",
+            "price":20000,
+            "doctor": "Era Mark",
+        "specialist":"Teeth",
+           "image":"https://camillianhospital.org/wp-content/uploads/2019/10/Screening-for-liver-01-906x480.jpg"
+        }
+    ]
