@@ -47,7 +47,7 @@ const Navbar = () => {
           <Link className="nav-link active ms-5" to="/login">Login</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link active ms-5" to="/">
+          <Link className="nav-link active ms-5" to="/myOrders">
           { user?.email &&
               <span>{user.displayName}</span>
           }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Form, Spinner } from 'react-bootstrap';
 import useAuth from '../../../hooks/useAuth';
 import axios from 'axios';
@@ -27,7 +27,8 @@ const Booking = () => {
     //  console.log(data);
     const [serviceDetails,setServiceDetails] = useState({});
       useEffect(() => {
-        fetch(`http://localhost:5000/services/${serviceId}`)
+        fetch(`https://howling-plague-64679.herokuapp.com/services/${serviceId}`)
+        // fetch(`http://localhost:5000/services/${serviceId}`)
         .then(res => res.json())
         .then(data =>setServiceDetails(data))
     },[])
@@ -59,7 +60,8 @@ const Booking = () => {
   }
     
    const handleSubmitData = () => {
-    axios.post('http://localhost:5000/bookings',orderData)
+    axios.post('https://howling-plague-64679.herokuapp.com/bookings',orderData)
+    // axios.post('http://localhost:5000/bookings',orderData)
     .then(res => {
         if(res.insertedId) {
             alert('added successfully');
@@ -100,9 +102,11 @@ const Booking = () => {
     <Form.Label>Number</Form.Label>
     <Form.Control type="Number" onBlur={handleInputNumber} placeholder="Number" />
   </Form.Group>
-  <Button className="btn btn-warning text-white" onClick={handleSubmitData} variant="primary" type="submit">
+      <Link to="/complete">
+      <Button className="btn btn-warning text-white" onClick={handleSubmitData} variant="primary" type="submit">
     Submit
   </Button>
+      </Link>
 </Form>
     </div>
 

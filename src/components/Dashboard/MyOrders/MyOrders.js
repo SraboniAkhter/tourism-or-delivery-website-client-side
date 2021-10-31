@@ -7,29 +7,34 @@ const MyOrders = () => {
     //  console.log(serviceDetails);
 
     useEffect(() => {
-        fetch('http://localhost:5000/bookings')
+        fetch('https://howling-plague-64679.herokuapp.com/bookings')
+        // fetch('http://localhost:5000/bookings')
         .then(res => res.json())
         .then(data =>setServiceDetails(data))
     },[])
     const handleDelete = id => {
-        const url = `http://localhost:5000/booking/${id}`;
-        fetch(url,{
-            method: 'DELETE'
-        })
-        .then(res => res.json())
-        .then(data => {
-            console.log(data);
-            if(data.deletedCount){
-                    alert('Are you sure you want to delete?')
-                const remaining = serviceDetails.filter(service =>service._id !== id);
-            setServiceDetails(remaining)
-            }
-        })
-    }
+        const proccess =window.confirm ('Are you sure you want to delete?')
+        if(proccess){
+           const url = `https://howling-plague-64679.herokuapp.com/booking/${id}`;
+        //    const url = `http://localhost:5000/booking/${id}`;
+           fetch(url,{
+               method: 'DELETE'
+           })
+           .then(res => res.json())
+           .then(data => {
+               console.log(data);
+               if(data.deletedCount){
+                        alert('Are you sure you want to delete?')
+                   const remaining = serviceDetails.filter(service =>service._id !== id);
+               setServiceDetails(remaining)
+               }
+           })
+        }
+       }
     const userBooking = serviceDetails.filter(service =>service.email ===user.email)
     return (
         <div>
-            <h2>Manage My Services</h2>
+            <h2 className="text-warning">Manage My Services</h2>
             {
                 
                 userBooking.map(service => <div className="mx-5" key={service._id}>

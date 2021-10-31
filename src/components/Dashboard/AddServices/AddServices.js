@@ -16,7 +16,8 @@ const AddServices = () => {
           imageURL:imageURL
       }
       console.log(serviceData);
-    axios.post('http://localhost:5000/services',serviceData)
+    axios.post('https://howling-plague-64679.herokuapp.com/services',serviceData)
+    // axios.post('http://localhost:5000/services',serviceData)
     .then(res => {
         if(res.data.insertedId) {
             alert('added successfully');
@@ -49,7 +50,7 @@ const AddServices = () => {
                 <input type="number" {...register("price")} placeholder="price" />
                  <input type="file" placeholder="image" onChange={handleImageAdd} />
                 <br />
-                <input type="submit" />
+                <input className="btn btn-warning text-white" type="submit" />
                 </form>
         </div>
     );
